@@ -1,7 +1,26 @@
+* {
+    font-family: "Rubik", serif;
+}
+li {
+    display: inline;
+    margin: 2%;
+    
+}   
+a {
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    display: block;
+}
 img {
     width: 20%;
 }
 .logos {
     width: 3%;
+}
+
+h1 {
+    text-align: center;
 }
 

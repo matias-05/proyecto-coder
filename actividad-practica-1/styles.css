@@ -19,7 +19,7 @@ h1 {
 
 p {
     font-size: 20px;
-    margin: auto 5% auto auto;
+    margin: auto 25% auto auto;
 }
 /*HEADER*/
 header{
@@ -50,6 +50,7 @@ main {
 .foto-mati {
     width: 300px;
     height: 300px;
+    border-radius: 10px;
 }
 /*CIERRE MAIN*/
 

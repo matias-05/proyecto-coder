@@ -3,32 +3,55 @@
     color: black;
     box-sizing: border-box;
 }
-li {
-    display: inline;
-    margin: 2%;
-}   
+
+body {
+    width: 65%;
+    margin: auto;
+}
+
 a {
     text-decoration: none;
+    font-size: 16px;
 }
+h1 {
+    font-size: 45px;
+}
+
+p {
+    font-size: 20px;
+    margin: auto 5% auto auto;
+}
+/*HEADER*/
 header{
-    width: 100%;
-    margin: 2% 0% 0% 60%;
+    margin: 2% 0% 2% 0%;
+    text-align: end;
 }
-img {
-    width: 20%;
+li {
+    display: inline;
+    margin: auto auto auto 3%;
+}   
+/*CIERRE HEADER*/
+
+/*FOOTER*/
+footer {
+    text-align: center;
 }
 .logos {
     width: 3%;
 }
+/*CIERRE FOOTER*/
 
+/*MAIN*/
 main {
+    margin: 5% auto 20% auto;
     display: flex;
-    gap: 50px;
-    width: 80%;
-    margin: 5% 10% 20% 10%;
-    
-    }
-
+    width: 100%;
+}
+.foto-mati {
+    width: 300px;
+    height: 300px;
+}
+/*CIERRE MAIN*/
 
 
 

@@ -6,95 +6,55 @@ body {
     background-color: #3E5879;
     margin: 0;
     padding: 0;
-    
-}
-/*HEADER*/
-
-.nav-bar {
-    display: flex;
-    justify-content: center;
-    background-color: #213555;
 }
 
-.nav-bar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
 
-.nav-bar a {
-    text-decoration: none;
-    font-size: 0.7rem;
-    color: white;
-}
-/*CIERRE HEADER*/
-
-/*MAIN*/
-.main-inicio {
-    justify-items: center;
-    color: white;
-    padding: 1%;
-    margin: 50px auto 50px auto;
-}
-
-.foto-mati {
-    width: 20rem;
-    border-radius: 10px;
-}
-
-.titulo-inicio {
-    font-size: 2.5em;
-    text-align: center;
-}
-
-.parrafo-inicio {
-    font-size: 1.5em;
-    text-align: center;
-}
-/*CIERRE MAIN*/
-
-/*FOOTER*/
-footer {
-    display: flex;
-    justify-content: center;
-    background-color: #213555;
-    gap: 2.5rem;
-    position: relative;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-/*CIERRE FOOTER*/
 
 @media (min-width: 1024px) {
+    .grid-contenedor-padre {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 8px;
+        
+    }
+    
+    .grid-item-hijo1 {
+        grid-column: 1 / 6;
+    }
+    .grid-item-hijo2 {
+        grid-column: 2 / 5;
+        grid-row: 2 / 5;
+
+    }
+    .grid-item-hijo3 {
+        grid-column: 1 / 6;
+        grid-row-start: 5;
+        align-content: end;
+    }
     .nav-bar {
         display: flex;
         flex-direction: column;
         background-color: #213555;
-        margin-bottom: 10%;
     }
     .nav-bar ul {
-        width: 100%;
         list-style: none;
         display: flex;
-        justify-content: end;
-        gap: 15px;
+        justify-content: center;
+        gap: 100px;
     }
 
     .nav-bar a {
         text-decoration: none;
         font-size: 0.9rem;
         color: white;
-        margin: auto 100px auto auto;
     }
-    main {
-        display: flex;
-        align-items: start;
-        justify-content: start;
-        gap: 100px;
+    .main-inicio {
         color: white;
-        width: 50%;
-        margin: auto;
+        padding: 4.5rem;
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
     }
     
     .foto-mati {
@@ -104,91 +64,20 @@ footer {
     }
     
     .titulo-inicio {
-        font-size: 2.5em;
-        text-align: start;
+        font-size: 3em;
     }
     
     .parrafo-inicio {
-        font-size: 1.5em;
-        text-align: start;
+        font-size: 2em;
     }
 
     footer {
-        display: flex;
-        justify-content: center;
-        gap: 8rem;
         background-color: #213555;
-        position: fixed;
-        bottom: 0;
-    }
-}
-@media (min-width: 744px) {
-    .nav-bar {
-        display: flex;
-        background-color: #213555;
-        
-    }
-    
-    .nav-bar ul {
-        list-style: none;
-        display: flex;
-        gap: 50px;
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .nav-bar a {
-        text-decoration: none;
-        font-size: 0.8rem;
-        color: white;
-    }
-    /*CIERRE HEADER*/
-    
-    /*MAIN*/
-    main {
-        display: flex;
-        align-items: start;
-        justify-content: center;
-        color: white;
-        padding: 2%;
-        margin: 50px auto 50px auto;
-    }
-    
-    .foto-mati {
-        width: 20rem;
-        border-radius: 10px;
-    }
-    
-    .titulo-inicio {
-        font-size: 2.5em;
-        text-align: start;
-    }
-    
-    .parrafo-inicio {
-        font-size: 1.5em;
-        text-align: start;
-    }
-    
-    /*CIERRE MAIN*/
-    
-    /*FOOTER*/
-    footer {
         display: flex;
         justify-content: center;
-        background-color: #213555;
-        gap: 2.5rem;
-        position: absolute;
-        right: 0;
-        left: 0;
-        bottom: 0;
+        gap: 10rem;
     }
 }
 
-.main-sobre-mi {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    padding: 1%;
-    margin: 50px auto 50px auto;
-}
+
+

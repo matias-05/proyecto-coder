@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
     font-family: "Rubik", serif;
     box-sizing: border-box;
@@ -7,6 +9,14 @@ body {
     margin: 0;
     padding: 0;
 }
+span {
+    font-weight: bold;
+}
+main {
+    color: white;
+}
+
+/*CONTENIDO DE INICIO*/
 .grid-contenedor-padre {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -24,7 +34,6 @@ body {
     display: flex;
     padding: 0%;
     gap: 20px;
-
 }
 
 .nav-bar a {
@@ -52,7 +61,7 @@ footer {
 
 .marco {
     background-color: #213555;
-    border-radius: 1rem;
+    border-radius: 16px;
 }
 
 @media (min-width: 1024px) {
@@ -93,7 +102,6 @@ footer {
         color: white;
     }
     .main-inicio {
-        color: white;
         margin: auto;
         display: flex;
         flex-direction: row;
@@ -124,6 +132,19 @@ footer {
         gap: 10rem;
     }
 }
+/*FIN DE CONTENIDO INCIO*/
 
-
+/*CONTENIDO SOBRE MI*/
+.main-sobre-mi {
+    padding: 3%;
+}
+.titulo-sobre-mi {
+    text-align: center;
+    font-size: 3rem;
+}
+.parrafo-sobre-mi {
+    text-align: start;
+    font-size: 2rem;
+}
+/*FIN DE CONTENIDO SOBRE MI*/
 

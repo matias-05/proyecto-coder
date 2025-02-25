@@ -16,12 +16,15 @@ main {
     color: white;
 }
 
-/*CONTENIDO DE INICIO*/
+/*MOBILE VIEW*/
+
 .grid-contenedor-padre {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat (3, 1fr);
 }
+
+/*HEADER*/
 
 .nav-bar {
     display: flex;
@@ -41,6 +44,26 @@ main {
     font-size: 0.7rem;
     color: white;
 }
+
+/*CIERRE HEADER*/
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.marco {
+    background-color: #213555;
+    border-radius: 16px;
+}
+
+/*CIERRE FOOTER*/
+
+/*INICIO STLYE*/
+
 .main-inicio {
     color: white;
     text-align: center;
@@ -53,16 +76,39 @@ main {
     border-radius: 10px;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
+/*CIERRE INICIO STYLE*/
+
+/*SOBRE MI STYLE*/
+
+.main-sobre-mi {
+    padding: 3%;
+}
+.titulo-sobre-mi {
+    text-align: center;
+    font-size: 3rem;
+}
+.parrafo-sobre-mi {
+    text-align: start;
+    font-size: 2rem;
 }
 
-.marco {
-    background-color: #213555;
-    border-radius: 16px;
-}
+/*CIERRE SOBRE MI STYLE*/
+
+/*HABILIDADES STYLE*/
+
+/*CIERRA HABILIDADES STYLE*/
+
+/*ESTUDIOS STYLE*/
+
+/*CIERRA ESTUDIOS STYLE*/
+
+/*CONTACTO STYLE*/
+
+/*CIERRA CONTACTO STYLE*/
+
+/*CIERRE MOBILE VIEW*/
+
+/*DESKTOP VIEW*/
 
 @media (min-width: 1024px) {
     .grid-contenedor-padre {
@@ -132,19 +178,113 @@ footer {
         gap: 10rem;
     }
 }
-/*FIN DE CONTENIDO INCIO*/
 
-/*CONTENIDO SOBRE MI*/
-.main-sobre-mi {
-    padding: 3%;
-}
-.titulo-sobre-mi {
-    text-align: center;
-    font-size: 3rem;
-}
-.parrafo-sobre-mi {
-    text-align: start;
-    font-size: 2rem;
-}
-/*FIN DE CONTENIDO SOBRE MI*/
+/*CIERRE DESKTOP VIEW*/
 
+/*TABLET VIEW*/
+
+@media (min-width: 744px) {
+
+    /*GRID*/
+
+    .grid-contenedor-padre {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    
+    .grid-item-hijo1 {
+        grid-column: 1 / 6;
+    }
+    .grid-item-hijo2 {
+        grid-column: 2 / 5;
+        grid-row: 2 / 5;
+    }
+    .grid-item-hijo3 {
+        grid-column: 1 / 6;
+        grid-row-start: 6;
+        align-content: center;
+    }
+
+    /*CIERRE GRID*/
+
+    /*HEADER*/
+
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        background-color: #213555;
+    }
+    
+    .nav-bar ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .nav-bar a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: white;
+    }
+
+    /*CIERRE HEADER*/
+
+    /*FOOTER*/
+
+    footer {
+        display: flex;
+        justify-content: center;
+        gap: 10rem;
+    }   
+
+    /*CIERRE FOOTER*/
+
+    /*INICIO STYLE*/
+
+    .main-inicio {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        padding: 0%;
+        
+    }
+    
+    .foto-mati {
+        width: 350px;
+        height: 350px;
+        border-radius: 10px;
+    }   
+    
+    .titulo-inicio {
+        font-size: 2rem;
+        text-align: start;
+    }
+    
+    .parrafo-inicio {
+        font-size: 1.5rem;
+        text-align: start;
+    }
+
+    /*CIERRE INCIO STYLE*/
+
+    /*SOBRE MI STYLE*/
+    
+    /*CIERRE SOBRE MI STYLE*/
+
+    /*HABILIDADES STYLE*/
+
+    /*CIERRA HABILIDADES STYLE*/
+
+    /*ESTUDIOS STYLE*/
+
+    /*CIERRA ESTUDIOS STYLE*/
+
+    /*CONTACTO STYLE*/
+
+    /*CIERRA CONTACTO STYLE*/
+
+}
+
+/*CIERRE TABLET VIEW*/

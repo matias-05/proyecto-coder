@@ -20,6 +20,7 @@ main {
 
 .grid-contenedor-padre {
     display: grid;
+    min-height: 100vh;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat (3, 1fr);
 }
@@ -53,6 +54,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 4rem;
+    padding: 2%;
 }
 
 .marco {
@@ -108,79 +110,6 @@ footer {
 
 /*CIERRE MOBILE VIEW*/
 
-/*DESKTOP VIEW*/
-
-@media (min-width: 1024px) {
-    .grid-contenedor-padre {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    
-    .grid-item-hijo1 {
-        grid-column: 1 / 6;
-    }
-    .grid-item-hijo2 {
-        grid-column: 2 / 5;
-        grid-row: 2 / 5;
-
-    }
-    .grid-item-hijo3 {
-        grid-column: 1 / 6;
-        grid-row-start: 6;
-        align-content: center;
-    }
-    .nav-bar {
-        display: flex;
-        flex-direction: column;
-        background-color: #213555;
-    }
-    .nav-bar ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        gap: 100px;
-    }
-
-    .nav-bar a {
-        text-decoration: none;
-        font-size: 0.9rem;
-        color: white;
-    }
-    .main-inicio {
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        gap: 10rem;
-        padding: 0%;
-    }
-    
-    .foto-mati {
-        width: 350px;
-        height: 450px;
-        border-radius: 10px;
-    }
-    
-    .titulo-inicio {
-        font-size: 3em;
-        text-align: start;
-    }
-    
-    .parrafo-inicio {
-        font-size: 2em;
-        text-align: start;
-    }
-
-    footer {
-        
-        display: flex;
-        justify-content: center;
-        gap: 10rem;
-    }
-}
-
-/*CIERRE DESKTOP VIEW*/
-
 /*TABLET VIEW*/
 
 @media (min-width: 744px) {
@@ -189,21 +118,9 @@ footer {
 
     .grid-contenedor-padre {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    
-    .grid-item-hijo1 {
-        grid-column: 1 / 6;
-    }
-    .grid-item-hijo2 {
-        grid-column: 2 / 5;
-        grid-row: 2 / 5;
-    }
-    .grid-item-hijo3 {
-        grid-column: 1 / 6;
-        grid-row-start: 6;
-        align-content: center;
+        min-height: 100vh;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat (3, 1fr);
     }
 
     /*CIERRE GRID*/
@@ -214,18 +131,18 @@ footer {
         display: flex;
         flex-direction: column;
         background-color: #213555;
+        align-items: center;
     }
-    
     .nav-bar ul {
         list-style: none;
         display: flex;
-        justify-content: center;
-        gap: 100px;
+        padding: 0%;
+        gap: 50px;
     }
-
+    
     .nav-bar a {
         text-decoration: none;
-        font-size: 0.9rem;
+        font-size: 1rem;
         color: white;
     }
 
@@ -236,35 +153,40 @@ footer {
     footer {
         display: flex;
         justify-content: center;
-        gap: 10rem;
-    }   
+        gap: 8rem;
+        padding: 2%;
+    }
+    
+    .marco {
+        background-color: #213555;
+        border-radius: 16px;
+    } 
 
     /*CIERRE FOOTER*/
 
     /*INICIO STYLE*/
 
     .main-inicio {
-        display: flex;
-        flex-direction: row;
-        gap: 5rem;
-        padding: 0%;
-        
+        color: white;
+        text-align: center;
+        margin-bottom: 5rem;
+        padding: 5%;
     }
     
     .foto-mati {
         width: 350px;
-        height: 350px;
+        height: 450px;
         border-radius: 10px;
-    }   
-    
+    }
+
     .titulo-inicio {
-        font-size: 2rem;
-        text-align: start;
+        font-size: 2.5rem;
+        text-align: center;
     }
     
     .parrafo-inicio {
         font-size: 1.5rem;
-        text-align: start;
+        text-align: center;
     }
 
     /*CIERRE INCIO STYLE*/
@@ -288,3 +210,122 @@ footer {
 }
 
 /*CIERRE TABLET VIEW*/
+
+/*DESKTOP VIEW*/
+
+@media (min-width: 1024px) {
+
+    /*GRID*/
+
+    .grid-contenedor-padre {
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    
+    .grid-item-hijo1 {
+        grid-column: 1 / 6;
+    }
+
+    .grid-item-hijo2 {
+        grid-column: 2 / 5;
+        grid-row: 2 / 5 ;
+    }
+
+    .grid-item-hijo3 {
+        grid-column: 1 / 6;
+        grid-row: 5 / 5;
+        align-content: center;
+    }
+
+    /*CIERRE GRID*/
+
+    /*HEADER*/
+
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        background-color: #213555;
+    }
+    .nav-bar ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .nav-bar a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: white;
+    }
+
+    /*CIERRE HEADER*/
+
+    /*FOOTER*/
+
+    footer {
+        display: flex;
+        justify-content: center;
+        gap: 10rem;
+    }
+
+    /*CIERRE FOOTER*/
+
+    /*INICIO STYLE*/
+
+    .main-inicio {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+        padding: 0%;
+    }
+    
+    .foto-mati {
+        width: 350px;
+        height: 450px;
+        border-radius: 10px;
+    }
+    
+    .titulo-inicio {
+        font-size: 3rem;
+        text-align: start;
+    }
+    
+    .parrafo-inicio {
+        font-size: 2rem;
+        text-align: start;
+    }
+
+    /*CIERRE INICIO STYLE*/
+
+    /*SOBRE MI STYLE*/
+
+    .titulo-sobre-mi {
+        background-color: #213555;
+        border-radius: 5px 5px 10px 10px;
+        font-size: 2.5rem;
+        padding: 1%;
+    }
+
+    /*CIERRE SOBRE MI STYLE*/
+    .main-habilidades {
+        
+    }
+
+    /*HABILIDADES STYLE*/
+
+    /*CIERRA HABILIDADES STYLE*/
+
+    /*ESTUDIOS STYLE*/
+
+    /*CIERRA ESTUDIOS STYLE*/
+
+    /*CONTACTO STYLE*/
+
+    /*CIERRA CONTACTO STYLE*/
+}
+
+/*CIERRE DESKTOP VIEW*/

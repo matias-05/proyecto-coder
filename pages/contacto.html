@@ -61,17 +61,27 @@
 
         <div class="grid-item-hijo2">
             <main class="main-contacto">
-                <h1>Contacto</h1>
-                <form action="" method="post">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" required>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="number" id="telefono" required>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea name="mensaje" id="mensaje" required></textarea>
-                    <input type="submit" value="enviar">
+                <h1 class="titulo-contacto">Contacto</h1>
+                <form>
+                    <div class="mb-3 div-contacto">
+                        <label for="name" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3 div-contacto">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="mb-3 div-contacto">
+                        <label for="number" class="form-label">Teléfono:</label>
+                        <input type="number" class="form-control" id="telefono">
+                    </div>
+                    <div class="mb-3 div-contacto">
+                        <label for="floatingTextarea2">Mensaje:</label>
+                        <textarea class="form-control" placeholder="Escribe tu mensaje aquí" id="floatingTextarea2" style="height: 100px"></textarea>
+                        
+                        
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </main>
         </div>

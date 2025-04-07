@@ -344,10 +344,33 @@ footer {
     /*CIERRA HABILIDADES STYLE*/
 
     /*ESTUDIOS STYLE*/
+    .titulo-estudios {
+        background-color: #213555;
+        text-align: center;
+        justify-self: center;
+        width: 30%;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .subtitulos-estudios {
+        background-color: #406299;
+        width: 65%;
+        margin-top: 6rem;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        justify-self: center;
+    }
 
     /*CIERRA ESTUDIOS STYLE*/
 
     /*CONTACTO STYLE*/
+    .div-contacto {
+        width: 50%;
+        text-align: center;
+        justify-self: center;
+        margin: 5rem;
+    }
 
     /*CIERRA CONTACTO STYLE*/
 }

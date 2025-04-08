@@ -246,7 +246,7 @@ footer {
     .logo-mati {
         width: 50px;
     }
-
+    
     /*CIERRE HEADER*/
 
     /*FOOTER*/
@@ -371,7 +371,27 @@ footer {
         justify-self: center;
         margin: 5rem;
     }
+    .btn-enviar {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        margin: 3rem;
+    }
 
+    .label-contacto {
+        background-color: #213555;
+        width: 20%;
+        padding: 1%;
+        border-radius: 10px;
+    }
+    .label-mensaje {
+        background-color: #213555;
+        width: 20%;
+        padding: 1%;
+        border-radius: 10px;
+        margin-bottom: 8px;
+    }
     /*CIERRA CONTACTO STYLE*/
 }
 

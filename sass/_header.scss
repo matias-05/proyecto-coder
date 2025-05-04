@@ -1,0 +1,27 @@
+@import "variables";
+
+.grid-area1 {
+    .mi-nav {
+        background-color: $azul-oscuro;
+        a {
+            color: white;
+        }
+    }
+    .logo-mati {
+        width: 10%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-area1 {
+        .mi-nav {
+            background-color: $azul-oscuro;
+            a {
+                color: white;
+            }
+        }
+        .logo-mati {
+            width: 50px;
+        }
+    }
+}

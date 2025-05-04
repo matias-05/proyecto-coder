@@ -1,0 +1,51 @@
+@import "variables";
+
+.grid-area2 {
+    .div-habilidades {
+        @include flex-column;
+        justify-self: center;
+        gap: 1rem;
+        margin: 2rem;
+        max-width: 150px;
+    }
+    .div-aprendiendo {
+        @extend .div-habilidades;
+    }
+    .subtitulos {
+        background-color: $azul-oscuro;
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 5%;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-area2 {
+        
+        .contenedor {
+
+            @include flex-row;
+            gap: 15rem;
+
+            .div-habilidades {
+                @include flex-column;
+                gap: 3rem;
+                max-width: 100px;
+            }
+            .div-aprendiendo {
+                @include flex-column;
+                gap: 3rem;
+                max-width: 100px;
+            }
+            .subtitulos {
+                background-color: $azul-oscuro;
+                padding: 10%;
+                border-radius: 10px;
+            }
+            .logos-car {
+                max-width: 100px;
+            }
+        }
+    }
+}

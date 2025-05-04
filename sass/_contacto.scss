@@ -1,0 +1,62 @@
+@import "variables";
+
+.grid-area2 {
+    .div-contacto {
+        @include flex-column;
+        justify-self: center;
+        margin: 5rem;
+        width: 90%;
+    }
+    .btn-enviar {
+        @include flex-row;
+        justify-self: center;
+        margin: 3rem;
+    }
+    .label-contacto {
+        @include flex-row;
+        background-color: $azul-oscuro;
+        width: fit-content;
+        padding: 4%;
+        border-radius: 10px;
+    }
+    .label-mensaje {
+        @extend .label-contacto;
+        margin-bottom: 8px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-area2 {
+        .div-contacto {
+            width: 50%;
+            @include flex-column;
+            justify-self: center;
+            margin: 5rem;
+
+            .label-mensaje {
+                background-color: $azul-oscuro;
+                width: 15%;
+                padding: 1%;
+                border-radius: 10px;
+                margin-bottom: 8px;
+                @include flex-row;
+            }
+
+            .label-contacto {
+                background-color: $azul-oscuro;
+                width: 15%;
+                padding: 1%;
+                border-radius: 10px;
+                @include flex-row;
+            }
+
+        }
+        .btn-enviar {
+            width: 10%;
+            @include flex-row;
+            justify-self: center;
+            margin: 3rem;
+        }
+
+    }
+}

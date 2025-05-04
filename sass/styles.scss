@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "variables";
+* {
+    font-family: "Rubik", serif;
+    box-sizing: border-box;
+} 
+body {
+    background-color: $azul;
+    margin: 0;
+    padding: 0;
+}
+span {
+    font-weight: bold;
+}
+main {
+    color: white;
+}
+
+@import "grid";
+@import "header";
+@import "footer";
+@import "main";
+@import "sobre-mi";
+@import "habilidades";
+@import "estudios";
+@import "contacto";
+

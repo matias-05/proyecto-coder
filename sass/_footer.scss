@@ -1,0 +1,30 @@
+@import "variables";
+
+.grid-area3 {
+    footer {
+        @include flex-row;
+        gap: 4rem;
+        padding-bottom: 1rem;
+    }
+    .marco {
+        background-color: $azul-oscuro;
+        border-radius: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-area3 {
+        footer {
+            @include flex-row;
+            gap: 10rem;
+            position: absolute;
+            padding-bottom: 4rem;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+        .footer-contacto {
+            position:relative;
+        }
+    }
+}

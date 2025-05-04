@@ -1,0 +1,57 @@
+@import "variables";
+
+.grid-area2 {
+    .titulo-estudios {
+        background-color: $azul-oscuro;
+        @include flex-row;
+        justify-self: center;
+        width: fit-content;
+        border-radius: 10px;
+        padding: 3%;
+        font-size: 1.7rem;
+        margin: 1rem;
+    }
+    .subtitulos-estudios {
+        background-color: $azul-claro;
+        display: flex;
+        margin: 1rem;
+        width: fit-content;
+        border-radius: 10px;
+        padding: 1%;
+        font-size: 1rem;
+    }
+    .parrafos-estudios {
+        margin: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-area2 {
+        .titulo-estudios {
+            background-color: #213555;
+            @include flex-row;
+            justify-self: center;
+            width: fit-content;
+            border-radius: 10px;
+            padding: 1%;
+            font-size: 2.5rem;
+            margin-top: 1rem;
+        }
+        .subtitulos-estudios {
+            background-color: $azul-claro;
+            @include flex-row;
+            justify-self: start;
+            width: fit-content;
+            margin: 2rem 0rem 2rem 2rem;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 1.5rem;
+        }
+        .parrafos-estudios {
+            margin: 0rem 20rem 0rem 2rem;
+            font-size: 1.3rem;
+        }
+        
+    }
+}

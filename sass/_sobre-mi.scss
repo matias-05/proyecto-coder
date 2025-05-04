@@ -1,0 +1,38 @@
+.grid-area2 {
+    .main-sobre-mi {
+        padding: 2rem;
+        .titulo-sobre-mi {
+            text-align: center;
+            font-size: 2rem;
+            background-color: $azul-oscuro;
+            border-radius: 10px;
+            padding: 2%;
+        }
+        .parrafo-sobre-mi {
+            text-align: center;
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-area2 {
+        .main-sobre-mi {
+            @include flex-column;
+            padding: 0rem 10rem 0rem 10rem;
+            .titulo-sobre-mi {
+                margin: 1rem;
+                background-color: $azul-oscuro;
+                width: 50%;
+                border-radius: 10px;
+                font-size: 2rem;
+                padding: 1%;
+            }
+            .parrafo-sobre-mi {
+                font-size: 1.5rem;
+                width: 50%;
+                text-align: center;
+            }
+        }
+    }
+}

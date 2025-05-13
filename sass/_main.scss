@@ -16,6 +16,29 @@
     }
 }
 
+
+@media (min-width: 768px) {
+    .grid-area2 {
+        .main-inicio {
+            @include flex-column;
+            color: white;
+            margin: 2rem 0rem 5rem 0rem;
+            .titulo-inicio {
+                text-align: center;
+                font-size: 3rem;
+            }
+            .parrafo-inicio {
+                text-align: center;
+                font-size: 1.7rem;
+            }
+            .foto-mati {
+                width: 20rem;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
 @media (min-width: 1024px) {
 
     .grid-area2 {

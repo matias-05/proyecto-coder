@@ -25,6 +25,36 @@
     }
 }
 
+@media (min-width: 768px) {
+    .grid-area2 {
+        .div-contacto {
+            @include flex-column;
+            justify-self: center;
+            margin: 5rem;
+            width: 90%;
+        }
+        .btn-enviar {
+            @include flex-row;
+            justify-self: center;
+            margin: 3rem;
+        }
+        .label-contacto {
+            @include flex-row;
+            background-color: $azul-oscuro;
+            width: fit-content;
+            padding: 2%;
+            border-radius: 10px;
+        }
+        .label-mensaje {
+            @include flex-row;
+            background-color: $azul-oscuro;
+            width: fit-content;
+            padding: 2%;
+            border-radius: 10px;
+        }
+    }      
+}
+
 @media (min-width: 1024px) {
     .grid-area2 {
         .div-contacto {

@@ -20,6 +20,32 @@
     }
 }
 
+@media (min-width: 768px) {
+    .grid-area2 {
+        .div-habilidades {
+            @include flex-column;
+            justify-self: center;
+            gap: 1rem;
+            margin: 2rem;
+            max-width: 150px;
+        }
+        .div-aprendiendo {
+            @include flex-column;
+            justify-self: center;
+            gap: 1rem;
+            margin: 2rem;
+            max-width: 150px;
+        }
+        .subtitulos {
+            background-color: $azul-oscuro;
+            font-size: 2rem;
+            text-align: center;
+            padding: 10%;
+            border-radius: 10px;
+        }
+    }
+}
+
 @media (min-width: 1024px) {
     .grid-area2 {
         

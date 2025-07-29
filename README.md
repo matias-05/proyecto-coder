@@ -6,7 +6,7 @@ Proyecto entrega final del curso **Desarrollo Web** de Coder House.
 
 ## 🌐 Demo
 
-📍 [Ver Demo en Vivo](matias-fernandez-portfolio.netlify.app/) 
+📍 [Ver Demo en Vivo](https://matias-fernandez-portfolio.netlify.app/) 
 ---
 
 ## 🛠️ Tecnologías Utilizadas
@@ -16,6 +16,6 @@ Proyecto entrega final del curso **Desarrollo Web** de Coder House.
 - **Sass (SCSS)**
 - **Bootstrap 5**
 - **Responsive Design (Mobile First)**
-- Librerías de animaciones
+- **Librerías de animaciones**
 
 ---
